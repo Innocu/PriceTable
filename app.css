@@ -67,7 +67,7 @@ body{
     width: 100%;
     max-width: 960px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     text-align: center;
     text-transform: uppercase;
 }
@@ -138,4 +138,18 @@ body{
 .pricing-button.is-featured:hover, .pricing-button.is-featured:focus {
     background-attachment: #269aff;
     color: white;
+}
+
+@media (min-width: 900px){
+    .panel {
+        flex-direction: row;
+    }
+    .pricing-plan {
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        padding: 25px 50px;
+    }
+    .pricing-plan:last-child {
+        border-right: none;
+    }
 }
